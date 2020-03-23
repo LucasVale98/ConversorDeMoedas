@@ -1,5 +1,6 @@
 package com.example.lucas.conversormoedas;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    @SuppressLint("DefaultLocale")
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.button_calculate){
@@ -36,8 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, this.getString(R.string.informe_valor), Toast.LENGTH_LONG).show();
             }else {
                 Double real = Double.valueOf(value);
-                this.mViewHolder.textDolar.setText(String.format("%.2f", (real / 4));
-                this.mViewHolder.textEuro.setText(String.format("%.2f", (real / 5));
+                this.mViewHolder.textDolar.setText(String.format("%.2f", (real / 4)));
+                this.mViewHolder.textEuro.setText(String.format("%.2f", (real / 5)));
             }
         }
     }
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.textDolar.setText("");
         this.mViewHolder.textEuro.setText("");
     }
-
+    s
     private static class ViewHolder {
         EditText editValue;
         TextView textDolar;
