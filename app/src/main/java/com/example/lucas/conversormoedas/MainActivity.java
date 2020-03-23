@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.textDolar.setText("");
         this.mViewHolder.textEuro.setText("");
     }
-    s
+
     private static class ViewHolder {
         EditText editValue;
         TextView textDolar;

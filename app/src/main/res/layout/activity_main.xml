@@ -2,6 +2,7 @@
 <LinearLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -38,7 +39,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/valor_em_d_lar"
         android:textColor="@color/colorAccent"
-        android:textSize="18sp">
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="wrap_content"
